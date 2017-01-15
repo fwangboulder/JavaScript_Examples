@@ -1,5 +1,16 @@
 <!DOCTYPE html>
 <html>
+<head>
+<!-- This tells the browser how to read the document. -->
+<meta charset="utf-8">
+
+<!-- Tells the browser what the title of this page should be. -->
+<title>Validation Test</title>
+</head>
+
+<!-- Load the page styles. -->
+<!--<link href="css/style.css" rel="stylesheet"> -->
+
 <body>
 
 <p>Enter a number and click OK:</p>
@@ -11,17 +22,6 @@
 
 <p id="demo"></p>
 
-<script>
-function myFunction() {
-    var txt = "";
-    if (document.getElementById("id1").validity.rangeOverflow) {
-        txt = "Value too large";
-    } else {
-        txt = "Input OK";
-    }
-    document.getElementById("demo").innerHTML = txt;
-}
-</script>
-
+<script src="js/validation.js"></script>
 </body>
 </html>
